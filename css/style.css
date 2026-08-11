@@ -180,7 +180,7 @@ button { font: inherit; cursor: pointer; }
 }
 
 .logo { display: flex; align-items: center; gap: 10px; }
-.logo__img { flex-shrink: 0; width: 48px; height: 48px; object-fit: contain; }
+.logo__img { flex-shrink: 0; width: 68px; height: 68px; object-fit: contain; }
 .logo__text {
   font-weight: 900;
   font-size: 14px;
