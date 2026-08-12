@@ -66,21 +66,35 @@
 <main id="main">
 
 <!-- ===================== HERO ===================== -->
-<section class="hero">
+<section class="hero hero--freedom" aria-labelledby="freedomHeroTitle">
+  <div class="hero__ambient hero__ambient--pink" aria-hidden="true"></div>
+  <div class="hero__ambient hero__ambient--blue" aria-hidden="true"></div>
+
   <div class="container hero__inner">
-    <div class="hero__copy reveal">
-      <p class="eyebrow eyebrow--blue">THE AI-POWERED MARKETING SYSTEM</p>
-      <h1 class="hero__headline">
-        THE<br>
-        <span class="gradient-text">FREEDOM</span><br>
-        TO BE.
+    <div class="hero__copy hero__copy--freedom">
+      <p class="eyebrow eyebrow--blue hero-animate hero-animate--1">THE AI-POWERED MARKETING SYSTEM</p>
+
+      <h1 class="hero__headline hero__headline--freedom" id="freedomHeroTitle">
+        <span class="hero-line hero-line--1">THE</span>
+        <span class="hero-line hero-line--2 gradient-text">FREEDOM</span>
+        <span class="hero-line hero-line--3">TO BE.</span>
       </h1>
-      <p class="hero__desc">Your business stays on track.<br>Your marketing runs in the background.<br><strong>You get your life back.</strong></p>
-      <div class="hero__ctas">
-        <a href="#final-cta" class="btn btn--gradient">Build My Marketing System <span class="arrow">&rarr;</span></a>
-        <a href="#execution" class="btn btn--ghost btn--ghost-demo"><span class="play-icon" aria-hidden="true">&#9654;</span><span class="btn__text"><b>See How It Works</b><small>2 min demo</small></span></a>
+
+      <p class="hero__desc hero-animate hero-animate--5">
+        Your business stays on track.<br>
+        Your marketing runs in the background.<br>
+        <strong>You get your life back.</strong>
+      </p>
+
+      <div class="hero__ctas hero-animate hero-animate--6">
+        <a href="#final-cta" class="btn btn--gradient hero-primary-cta">Build My Marketing System <span class="arrow">&rarr;</span></a>
+        <a href="#execution" class="btn btn--ghost btn--ghost-demo">
+          <span class="play-icon" aria-hidden="true">&#9654;</span>
+          <span class="btn__text"><b>See How It Works</b><small>2 min demo</small></span>
+        </a>
       </div>
-      <div class="works-with">
+
+      <div class="works-with hero-animate hero-animate--7">
         <span class="works-with__label">Works with:</span>
         <span class="platform-icons">
           <span class="platform-icon" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.4" cy="6.6" r="1.05" fill="currentColor"/></svg></span>
@@ -94,8 +108,35 @@
       </div>
     </div>
 
-    <div class="hero__visual reveal">
-      <img class="hero__photo" src="images/hero-freedom.jpg" alt="Marketing Margins dashboard open on a laptop while a business owner relaxes on a boat, with live stat cards for content scheduled, engagement, revenue, and automations running">
+    <div class="hero__visual hero__visual--freedom" id="freedomVisual">
+      <div class="hero-photo-frame">
+        <img class="hero__photo hero__photo--freedom" src="images/hero-freedom.jpg" alt="A business owner relaxing on a yacht while her marketing system quietly runs in the background">
+        <div class="hero-photo-shade" aria-hidden="true"></div>
+      </div>
+
+      <div class="freedom-status freedom-status--scheduled hero-float-card" data-depth="12">
+        <span class="freedom-status__dot freedom-status__dot--pink" aria-hidden="true"></span>
+        <span><strong>Content Scheduled</strong><small>Through Sept. 14</small></span>
+        <span class="freedom-status__check" aria-hidden="true">&#10003;</span>
+      </div>
+
+      <div class="freedom-status freedom-status--growth hero-float-card" data-depth="18">
+        <span class="freedom-status__dot freedom-status__dot--blue" aria-hidden="true"></span>
+        <span><strong>Engagement</strong><small><span class="hero-counter" data-counter="24">0</span>% this week</small></span>
+        <span class="freedom-status__trend" aria-hidden="true">&#8599;</span>
+      </div>
+
+      <div class="freedom-status freedom-status--automation hero-float-card" data-depth="9">
+        <span class="freedom-status__dot freedom-status__dot--purple" aria-hidden="true"></span>
+        <span><strong>Automations Running</strong><small>No action needed</small></span>
+        <span class="freedom-status__check" aria-hidden="true">&#10003;</span>
+      </div>
+
+      <div class="freedom-proof hero-animate hero-animate--7">
+        <span class="freedom-proof__pulse" aria-hidden="true"></span>
+        <span>YOUR BUSINESS IS MOVING.</span>
+        <strong>YOU DON'T HAVE TO MISS YOUR LIFE.</strong>
+      </div>
     </div>
   </div>
 </section>
