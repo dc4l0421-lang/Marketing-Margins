@@ -156,7 +156,6 @@ button { font: inherit; cursor: pointer; }
   border: 1.5px solid var(--border-light);
 }
 .btn--ghost:hover { border-color: var(--purple); color: var(--purple); }
-.play-icon { font-size: 10px; }
 
 .btn--sm { padding: 11px 20px; font-size: 12.5px; }
 .btn--block { width: 100%; }
@@ -322,85 +321,28 @@ button { font: inherit; cursor: pointer; }
 }
 .platform-icon svg { width: 16px; height: 16px; }
 
-/* ---- Hero visual / dashboard mockup ---- */
+/* ---- Hero visual photo ---- */
 .hero__visual { position: relative; }
-.glow { position: absolute; border-radius: 50%; filter: blur(60px); opacity: .45; z-index: 0; }
-.glow--pink { width: 260px; height: 260px; background: var(--pink); top: -40px; right: 20px; }
-.glow--blue { width: 220px; height: 220px; background: var(--blue); bottom: -30px; left: -20px; }
-
-.dash {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  background: var(--white);
-  border-radius: 22px;
-  box-shadow: 0 30px 70px rgba(20,19,31,.16);
-  border: 1px solid var(--border-light);
-  overflow: hidden;
-}
-.dash__sidebar {
-  background: var(--lavender);
-  padding: 18px 12px;
-  border-right: 1px solid var(--border-light);
-}
-.dash__brand { display: flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 800; margin-bottom: 16px; color: var(--ink); }
-.dash__brand img { width: 20px; height: 20px; }
-.dash__nav { display: flex; flex-direction: column; gap: 3px; }
-.dash__nav-item { display: flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 600; color: var(--gray-text); padding: 7px 9px; border-radius: 8px; }
-.dash__nav-item.is-active { background: var(--gradient-main); color: #fff; }
-
-.dash__main { padding: 20px; }
-.dash__topbar { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 16px; }
-.dash__greeting { font-size: 16px; font-weight: 800; }
-.dash__subgreeting { font-size: 11.5px; color: var(--gray-text); margin-top: 2px; }
-.dash__topbar-icons { display: flex; align-items: center; gap: 10px; }
-.dash__bell { font-size: 15px; }
-.dash__avatar {
-  width: 28px; height: 28px; border-radius: 50%;
-  background: var(--gradient-main); color: #fff;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 11px; font-weight: 800;
+.hero__photo {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 30px 70px rgba(20,19,31,.18);
+  -webkit-mask-image: linear-gradient(to left, #000 85%, transparent 100%);
+  mask-image: linear-gradient(to left, #000 85%, transparent 100%);
 }
 
-.dash__stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-bottom: 16px;
-}
-.dash__stat {
-  background: var(--blush);
-  border: 1px solid var(--border-light);
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.dash__stat-label { font-size: 8.5px; font-weight: 700; letter-spacing: .3px; color: var(--gray-text); text-transform: uppercase; }
-.dash__stat-value { font-size: 14px; font-weight: 800; display: flex; align-items: center; gap: 4px; }
-.mini-trend { width: 32px; height: 14px; }
-
-.dash__panels { display: grid; grid-template-columns: 1.1fr 1fr; gap: 12px; }
-.dash__card { background: var(--ice); border: 1px solid var(--border-light); border-radius: 12px; padding: 14px; }
-.dash__card-title { font-size: 11px; font-weight: 800; display: block; margin-bottom: 10px; }
-
-.dash__priorities { display: flex; flex-direction: column; gap: 8px; }
-.dash__priorities li { display: flex; align-items: flex-start; gap: 8px; font-size: 10.5px; font-weight: 600; }
-.dash__priorities em { display: block; font-style: normal; font-weight: 500; color: var(--gray-text); font-size: 9px; }
-.dash__check {
+.btn--ghost-demo { padding: 10px 22px 10px 14px; gap: 12px; }
+.play-icon {
   flex-shrink: 0;
-  width: 14px; height: 14px;
-  border-radius: 4px;
-  border: 1.5px solid var(--purple);
-  margin-top: 1px;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-light);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px;
 }
-
-.dash__week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-bottom: 12px; }
-.dash__day { display: flex; flex-direction: column; align-items: center; gap: 3px; background: var(--white); border-radius: 8px; padding: 6px 2px; }
-.dash__day span { font-size: 7px; font-weight: 700; color: var(--gray-text); }
-.dash__day b { font-size: 11px; font-weight: 800; }
+.btn__text { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; }
+.btn__text b { font-weight: 800; }
+.btn__text small { font-weight: 600; color: var(--gray-text); font-size: 11px; }
 
 /* ============================================================
    JOURNEY SECTION
@@ -815,7 +757,7 @@ button { font: inherit; cursor: pointer; }
 @media (max-width: 1080px) {
   .hero__inner { grid-template-columns: 1fr; }
   .hero__visual { margin-top: 20px; }
-  .dash { max-width: 620px; margin: 0 auto; }
+  .hero__photo { -webkit-mask-image: none; mask-image: none; max-width: 620px; margin: 0 auto; display: block; }
   .journey-grid { grid-template-columns: repeat(2, 1fr); }
   .freedom__gallery { grid-template-columns: repeat(2, 1fr); }
   .final-cta__inner { grid-template-columns: 1fr; }
@@ -852,10 +794,6 @@ button { font: inherit; cursor: pointer; }
 
 @media (max-width: 760px) {
   .container { padding: 0 20px; }
-  .dash { grid-template-columns: 1fr; }
-  .dash__sidebar { display: none; }
-  .dash__stats { grid-template-columns: repeat(2, 1fr); }
-  .dash__panels { grid-template-columns: 1fr; }
   .journey-grid { grid-template-columns: 1fr; }
   .timeline { grid-template-columns: repeat(2, 1fr); }
   .freedom__gallery { grid-template-columns: repeat(2, 1fr); }
@@ -866,7 +804,6 @@ button { font: inherit; cursor: pointer; }
 
 @media (max-width: 540px) {
   .hero__ctas { flex-direction: column; align-items: stretch; }
-  .dash__stats { grid-template-columns: 1fr 1fr; }
   .timeline { grid-template-columns: 1fr 1fr; }
   .benefits__grid { grid-template-columns: 1fr; }
   .milestones span { font-size: 11.5px; padding: 8px 12px; }
