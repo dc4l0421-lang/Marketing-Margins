@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (freedomHero && !reduceMotion) {
     window.setTimeout(animateHeroCounters, 950);
 
-    if (window.matchMedia('(min-width: 901px)').matches && freedomVisual) {
+    if (window.matchMedia('(min-width: 1121px)').matches && freedomVisual) {
       freedomVisual.addEventListener('pointermove', (event) => {
         const rect = freedomVisual.getBoundingClientRect();
         const x = (event.clientX - rect.left) / rect.width - 0.5;
